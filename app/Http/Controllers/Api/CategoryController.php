@@ -30,8 +30,9 @@ class CategoryController extends Controller
      */
     public function show(category $category)
     {
-        //
+        return new CategoryResource($category);
     }
+
 
     /**
      * Update the specified resource in storage.
